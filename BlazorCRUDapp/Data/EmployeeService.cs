@@ -15,9 +15,14 @@
                 Name = "Employee 2"
             }
          };
+
+        public Employee GetEmployee(Guid id)
+        {
+            return employees.SingleOrDefault(x => x.Id == id);
+        }
         public List<Employee> GetEmployees()
-            {
-                return employees;
-            }
+        {
+            return employees;
+        }
     }
 }

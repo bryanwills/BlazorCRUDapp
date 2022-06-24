@@ -5,6 +5,7 @@ namespace BlazorCRUDapp.Data
     interface IEmployeeService
     {
         List<Employee> GetEmployees();
+        Employee GetEmployee(Gi id);
 
     }
 }
